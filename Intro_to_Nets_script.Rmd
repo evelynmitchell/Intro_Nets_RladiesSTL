@@ -67,7 +67,7 @@ is.simple(UKfaculty)
 
 Explore the karate network
 How many nodes does the network have?
-Is the network directed or indirected?
+Is the network directed or undirected?
 What vertex and edge attributes does the network have?
 
 ```{r}
