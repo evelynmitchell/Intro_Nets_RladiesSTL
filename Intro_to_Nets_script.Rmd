@@ -550,7 +550,6 @@ plot(UKfaculty,
                    V(UKfaculty)[kc$membership==4],
                    V(UKfaculty)[kc$membership==5]), 
           mark.col="gray90", mark.border="#88398A")
-
 ```
 
 # Your turn!
