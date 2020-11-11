@@ -1289,7 +1289,9 @@ Outcome results from the positions & roles that nodes occupy:
 class: center, middle
 # Thank you!
 
-.center[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
+.center[I'd love to hear about your experience taking this workshop!<br> Would you be willing to complete a short [**survey**](https://duke.qualtrics.com/jfe/form/SV_9RKBIISfe3vuiNL)?]
+
+.center[<br><br>Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
 
 .center[<br><br><br>[mariacramos.com](https://https://mariacramos.com/)
 <br><br>.large[@mariacramosf]

@@ -178,12 +178,12 @@ class: inverse, center, top
 .left[
 + Explore the karate network 
 + How many nodes does the network have? 
-+ Is the network directed or indirected? 
++ Is the network directed or undirected? 
 + What vertex and edge attributes does the network have?
 + Does the graph have multiple edges per pair of nodes or any loops?
 ]
 
-<div class="countdown" id="timer_5faa0f0f" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac6536" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -198,16 +198,16 @@ karate
 
 ```
 *## IGRAPH 4b458a1 UNW- 34 78 -- Zachary's karate club network
-*## + attr: name (g/c), Citation (g/c), Author (g/c), Faction (v/n), name
-*## | (v/c), label (v/c), color (v/n), weight (e/n)
+*## + attr: name (g/c), Citation (g/c), Author (g/c),
+*## | Faction (v/n), name (v/c), label (v/c), color
+## | (v/n), weight (e/n)
 ## + edges from 4b458a1 (vertex names):
-##  [1] Mr Hi  --Actor 2  Mr Hi  --Actor 3  Mr Hi  --Actor 4  Mr Hi  --Actor 5 
-##  [5] Mr Hi  --Actor 6  Mr Hi  --Actor 7  Mr Hi  --Actor 8  Mr Hi  --Actor 9 
-##  [9] Mr Hi  --Actor 11 Mr Hi  --Actor 12 Mr Hi  --Actor 13 Mr Hi  --Actor 14
-## [13] Mr Hi  --Actor 18 Mr Hi  --Actor 20 Mr Hi  --Actor 22 Mr Hi  --Actor 32
-## [17] Actor 2--Actor 3  Actor 2--Actor 4  Actor 2--Actor 8  Actor 2--Actor 14
-## [21] Actor 2--Actor 18 Actor 2--Actor 20 Actor 2--Actor 22 Actor 2--Actor 31
-## [25] Actor 3--Actor 4  Actor 3--Actor 8  Actor 3--Actor 9  Actor 3--Actor 10
+##  [1] Mr Hi  --Actor 2  Mr Hi  --Actor 3  Mr Hi  --Actor 4 
+##  [4] Mr Hi  --Actor 5  Mr Hi  --Actor 6  Mr Hi  --Actor 7 
+##  [7] Mr Hi  --Actor 8  Mr Hi  --Actor 9  Mr Hi  --Actor 11
+## [10] Mr Hi  --Actor 12 Mr Hi  --Actor 13 Mr Hi  --Actor 14
+## [13] Mr Hi  --Actor 18 Mr Hi  --Actor 20 Mr Hi  --Actor 22
+## [16] Mr Hi  --Actor 32 Actor 2--Actor 3  Actor 2--Actor 4 
 ## + ... omitted several edges
 ```
 
@@ -241,7 +241,7 @@ Replace every [xxx] in the code to answer each question.
 + Is there an edge between Mr Hi and John A?
 ]
 
-<div class="countdown" id="timer_5faa10f4" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac64c5" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -270,8 +270,9 @@ neighbors(karate, "Mr Hi", mode = "in")
 
 ```
 ## + 16/34 vertices, named, from 4b458a1:
-##  [1] Actor 2  Actor 3  Actor 4  Actor 5  Actor 6  Actor 7  Actor 8  Actor 9 
-##  [9] Actor 11 Actor 12 Actor 13 Actor 14 Actor 18 Actor 20 Actor 22 Actor 32
+##  [1] Actor 2  Actor 3  Actor 4  Actor 5  Actor 6  Actor 7 
+##  [7] Actor 8  Actor 9  Actor 11 Actor 12 Actor 13 Actor 14
+## [13] Actor 18 Actor 20 Actor 22 Actor 32
 ```
 
 ---
@@ -286,9 +287,9 @@ neighbors(karate, "John A", mode = "in")
 
 ```
 ## + 17/34 vertices, named, from 4b458a1:
-##  [1] Actor 9  Actor 10 Actor 14 Actor 15 Actor 16 Actor 19 Actor 20 Actor 21
-##  [9] Actor 23 Actor 24 Actor 27 Actor 28 Actor 29 Actor 30 Actor 31 Actor 32
-## [17] Actor 33
+##  [1] Actor 9  Actor 10 Actor 14 Actor 15 Actor 16 Actor 19
+##  [7] Actor 20 Actor 21 Actor 23 Actor 24 Actor 27 Actor 28
+## [13] Actor 29 Actor 30 Actor 31 Actor 32 Actor 33
 ```
 
 How many nodes nominated both Mr Hi and John A?
@@ -533,7 +534,7 @@ Reach goal: color different subsets of vertices and edges in a different way usi
 
 ]
 
-<div class="countdown" id="timer_5faa11ea" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac649e" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -544,7 +545,7 @@ class: inverse, top, center
 
 ## Take some time to stretch :)
 
-<div class="countdown" id="timer_5faa1127" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac6489" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -702,7 +703,7 @@ Obtain the following descriptive statistics for the karate data:
 &lt;/table&gt;
 
 .center[What can you say about this network?]
-<div class="countdown" id="timer_5faa10a0" style="bottom:0;left:0;margin:1%;padding:5px;font-size:4em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac67d2" style="bottom:0;left:0;margin:1%;padding:5px;font-size:4em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -838,7 +839,7 @@ Calculate degree, closeness, and betweenness centrality for the karate network.
 Which are the most central nodes according to different measures?
 ]
 
-<div class="countdown" id="timer_5faa0fd6" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac66e9" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 ---
@@ -853,16 +854,18 @@ sort(deg, decreasing = T)
 ```
 
 ```
-##   John A    Mr Hi Actor 33  Actor 3  Actor 2  Actor 4 Actor 32  Actor 9 
-##       17       16       12       10        9        6        6        5 
-## Actor 14 Actor 24  Actor 6  Actor 7  Actor 8 Actor 28 Actor 30 Actor 31 
-##        5        5        4        4        4        4        4        4 
-##  Actor 5 Actor 11 Actor 20 Actor 25 Actor 26 Actor 29 Actor 10 Actor 13 
-##        3        3        3        3        3        3        2        2 
-## Actor 15 Actor 16 Actor 17 Actor 18 Actor 19 Actor 21 Actor 22 Actor 23 
-##        2        2        2        2        2        2        2        2 
-## Actor 27 Actor 12 
-##        2        1
+##   John A    Mr Hi Actor 33  Actor 3  Actor 2  Actor 4 
+##       17       16       12       10        9        6 
+## Actor 32  Actor 9 Actor 14 Actor 24  Actor 6  Actor 7 
+##        6        5        5        5        4        4 
+##  Actor 8 Actor 28 Actor 30 Actor 31  Actor 5 Actor 11 
+##        4        4        4        4        3        3 
+## Actor 20 Actor 25 Actor 26 Actor 29 Actor 10 Actor 13 
+##        3        3        3        3        2        2 
+## Actor 15 Actor 16 Actor 17 Actor 18 Actor 19 Actor 21 
+##        2        2        2        2        2        2 
+## Actor 22 Actor 23 Actor 27 Actor 12 
+##        2        2        2        1
 ```
 ---
 Degree centrality 
@@ -890,18 +893,24 @@ sort(cl, decreasing = T)
 ```
 
 ```
-##       Mr Hi      John A    Actor 20    Actor 13    Actor 21    Actor 29 
-## 0.007575758 0.007575758 0.007246377 0.006134969 0.006134969 0.006097561 
-##    Actor 32    Actor 33     Actor 9     Actor 3    Actor 18    Actor 14 
-## 0.006097561 0.005952381 0.005882353 0.005847953 0.005780347 0.005747126 
-##    Actor 19     Actor 2     Actor 8    Actor 10    Actor 22    Actor 11 
-## 0.005586592 0.005494505 0.005494505 0.005494505 0.005319149 0.005291005 
-##    Actor 30     Actor 4    Actor 15    Actor 27    Actor 31    Actor 23 
-## 0.005263158 0.005235602 0.005154639 0.005076142 0.004878049 0.004716981 
-##    Actor 25     Actor 7    Actor 28     Actor 5     Actor 6    Actor 12 
-## 0.004694836 0.004629630 0.004629630 0.004587156 0.004587156 0.004405286 
-##    Actor 24    Actor 16    Actor 26    Actor 17 
-## 0.004149378 0.004098361 0.003690037 0.003267974
+##       Mr Hi      John A    Actor 20    Actor 13 
+## 0.007575758 0.007575758 0.007246377 0.006134969 
+##    Actor 21    Actor 29    Actor 32    Actor 33 
+## 0.006134969 0.006097561 0.006097561 0.005952381 
+##     Actor 9     Actor 3    Actor 18    Actor 14 
+## 0.005882353 0.005847953 0.005780347 0.005747126 
+##    Actor 19     Actor 2     Actor 8    Actor 10 
+## 0.005586592 0.005494505 0.005494505 0.005494505 
+##    Actor 22    Actor 11    Actor 30     Actor 4 
+## 0.005319149 0.005291005 0.005263158 0.005235602 
+##    Actor 15    Actor 27    Actor 31    Actor 23 
+## 0.005154639 0.005076142 0.004878049 0.004716981 
+##    Actor 25     Actor 7    Actor 28     Actor 5 
+## 0.004694836 0.004629630 0.004629630 0.004587156 
+##     Actor 6    Actor 12    Actor 24    Actor 16 
+## 0.004587156 0.004405286 0.004149378 0.004098361 
+##    Actor 26    Actor 17 
+## 0.003690037 0.003267974
 ```
 ]
 
@@ -931,16 +940,20 @@ sort(btw, decreasing = T)
 ```
 
 ```
-##      Mr Hi     John A   Actor 20   Actor 32   Actor 33    Actor 3   Actor 25 
-## 250.150000 209.500000 127.066667  66.333333  38.133333  36.650000  33.833333 
-##    Actor 2   Actor 18    Actor 6    Actor 7    Actor 9   Actor 29   Actor 10 
-##  33.800000  16.100000  15.500000  15.500000  13.100000  10.100000   7.283333 
-##   Actor 28   Actor 19   Actor 31    Actor 4   Actor 14   Actor 24    Actor 5 
-##   6.500000   3.000000   3.000000   1.333333   1.200000   1.000000   0.500000 
-##   Actor 11   Actor 26    Actor 8   Actor 12   Actor 13   Actor 15   Actor 16 
-##   0.500000   0.500000   0.000000   0.000000   0.000000   0.000000   0.000000 
-##   Actor 17   Actor 21   Actor 22   Actor 23   Actor 27   Actor 30 
-##   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+##      Mr Hi     John A   Actor 20   Actor 32   Actor 33 
+## 250.150000 209.500000 127.066667  66.333333  38.133333 
+##    Actor 3   Actor 25    Actor 2   Actor 18    Actor 6 
+##  36.650000  33.833333  33.800000  16.100000  15.500000 
+##    Actor 7    Actor 9   Actor 29   Actor 10   Actor 28 
+##  15.500000  13.100000  10.100000   7.283333   6.500000 
+##   Actor 19   Actor 31    Actor 4   Actor 14   Actor 24 
+##   3.000000   3.000000   1.333333   1.200000   1.000000 
+##    Actor 5   Actor 11   Actor 26    Actor 8   Actor 12 
+##   0.500000   0.500000   0.500000   0.000000   0.000000 
+##   Actor 13   Actor 15   Actor 16   Actor 17   Actor 21 
+##   0.000000   0.000000   0.000000   0.000000   0.000000 
+##   Actor 22   Actor 23   Actor 27   Actor 30 
+##   0.000000   0.000000   0.000000   0.000000
 ```
 ]
 ---
@@ -1009,7 +1022,7 @@ Conduct a community detection procedure for the karate data?
 What are the communities you find?
 ]
 
-<div class="countdown" id="timer_5faa0f03" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
+<div class="countdown" id="timer_5fac657b" style="right:0;bottom:0;left:0;margin:5%;padding:50px;font-size:6em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -1165,7 +1178,9 @@ Outcome results from the positions &amp; roles that nodes occupy:
 class: center, middle
 # Thank you!
 
-.center[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
+.center[I'd love to hear about your experience taking this workshop!&lt;br&gt; Would you be willing to complete a short [**survey**](https://duke.qualtrics.com/jfe/form/SV_9RKBIISfe3vuiNL)?]
+
+.center[&lt;br&gt;&lt;br&gt;Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
 
 .center[&lt;br&gt;&lt;br&gt;&lt;br&gt;[mariacramos.com](https://https://mariacramos.com/)
 &lt;br&gt;&lt;br&gt;.large[@mariacramosf]
